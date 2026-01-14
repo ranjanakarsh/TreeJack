@@ -245,6 +245,7 @@ const InputPanel = ({
       <div className="json-editor-container">
         <JSONInput
           id="input-editor"
+          key={JSON.stringify(inputEditorValue)}
           placeholder={inputEditorValue || {}}
           locale={locale}
           height="150px"
